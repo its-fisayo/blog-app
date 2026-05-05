@@ -8,7 +8,7 @@ import CreatePost from './components/createPost';
 
 function App() {
   const [posts, setPost] = useState([]);
-  
+
     useEffect(() => {
         async function fetchPosts() {
             const res = await fetch("https://jsonplaceholder.typicode.com/posts")
@@ -23,6 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home posts={posts} setPost={setPost}/>}/>
         <Route path="/create" element={<CreatePost posts={posts} setPost={setPost}/>}/>
+        <Route path="/signup" element={<Signup />}/>
+        <Route path="/login" element={<Login />}/>
       </Routes>
     </BrowserRouter>
   )
