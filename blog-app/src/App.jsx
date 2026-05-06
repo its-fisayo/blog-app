@@ -21,10 +21,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home posts={posts} setPost={setPost}/>}/>
+        <Route path="/home" element={<Home posts={posts} setPost={setPost}/>}/>
         <Route path="/create" element={<CreatePost posts={posts} setPost={setPost}/>}/>
         <Route path="/signup" element={<Signup />}/>
-        <Route path="/login" element={<Login />}/>
+        <Route path="/" element={<Login />}/>
       </Routes>
     </BrowserRouter>
   )

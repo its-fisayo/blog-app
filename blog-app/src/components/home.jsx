@@ -6,13 +6,13 @@ import PostCards from "./postCards";
 function Home({posts, setPost}) {
 
     return (
-        <div>
+        <div className="">
             <nav>
-                <ul className="flex border-b border-gray-200 h-15 flex items-center mb-5 justify-end">
-                    <div className="w-2/9 flex justify-around">
-                        <li><button className="bg-blue-200 border-b border-r"><Link to="/create">Create a Post</Link></button></li>
-                        <li><Link to="/login">Login</Link></li>
-                        <li><Link to="signup">Sign Up</Link></li>
+                <ul className="flex border-b border-gray-200 h-15 flex items-center mb-5 justify-end text-blue-500">
+                    <div className="md:w-2/7  flex justify-around">
+                        <li><Link to="/create"><button className="bg-blue-500 border-b border-r p-2 w-20 hover:bg-blue-200 cursor-pointer rounded-lg text-black">Post</button></Link></li>
+                        <li className="p-2 hover:text-blue-200"><Link to="/">Login</Link></li>
+                        <li className="p-2 hover:text-blue-200"><Link to="signup">Sign Up</Link></li>
                     </div>
                 </ul>
             </nav>
