@@ -4,23 +4,25 @@ import { Link, Navigate } from "react-router-dom";
 
 function Signup() {
     return (
-        <div className='bg-[url("images/image2.jpg")] bg-cover bg-no-repeat bg-center w-full h-screen'>
-            <div className='border-white rounded-lg md:w-3/5 lg:w-2/5 w-4/5 p-6 mx-auto my-10 bg-white/75 text-black'>
-                <h1>Sign Up</h1>
+        <div className='bg-[#0F344F]/10 h-screen'>
+            <div className='bg-[url("images/image2.jpg")] no-repeat bg-cover bg-center sm:invisible w-screen h-screen'>
+            <div className='bg-white/60 w-screen h-screen pt-30 sm:invisible'>
+            <div className='lg:w-1/2 md:w-2/3 sm:w-3/4 w-5/6 mx-auto text-black flex flex-row-reverse border-0 rounded-xl shadow-2xl visible animate-in fade-in zoom-in duration-200'>
+            <div  className='sm:w-1/2 w-1/1 bg-white h-1/1 flex flex-col items-center py-10 rounded-r-xl rounded-l-xl sm:rounded-l-none'>
+                <h1 className='font-script font-bold text-3xl'>Sign Up</h1> <br />
                 <form  className='flex flex-col items-start w-6/7 md:w-3/5 mx-auto'>
-                    <label htmlFor="fname">First Name</label>
-                    <input type="text" name="fname" id="fname" className="border-1 w-1/1"/>
-                    <label htmlFor="lname">Last Name</label>
-                    <input type="text" name="lname" id="lname" className="border-1 w-1/1"/>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" className="border-1 w-1/1"></input>
-                    <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="password" className="border-1 w-1/1"/>
-                    <label htmlFor="cpassword">Confirm Password</label>
-                    <input type="password" name="cpassword" id="cpassword" className="border-1 w-1/1"/><br />
-                    <button type="submit" className="bg-blue-500 border-b border-r p-2 hover:bg-blue-200 cursor-pointer self-center rounded-lg">Create Account</button>     
+                    <input type="text" name="fname" id="fname" placeholder="First Name" className="bg-[#0F344F]/20 w-1/1 my-2 pl-2 rounded-sm"/>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" className="bg-[#0F344F]/20 w-1/1 mb-2 pl-2 rounded-sm"/>
+                    <input type="email" name="email" id="email" placeholder="Email" className="bg-[#0F344F]/20 w-1/1 mb-2 pl-2 rounded-sm"></input>
+                    <input type="password" name="password" id="password" placeholder="Password" className="bg-[#0F344F]/20 w-1/1 mb-2 pl-2 rounded-sm"/>
+                    <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" className="bg-[#0F344F]/20 w-1/1 pl-2 rounded-sm"/><br />
+                    <button type="submit" className="bg-[#0F344F] text-white hover:bg-[#0F344F]/40 hover:text-black border-b border-r p-2 px-4 cursor-pointer self-center rounded-lg">Create Account</button>     
                 </form>
-                <p className="text-xs">ALready have an account? <Link to="/"><span className='text-blue-500 active:text-blue-200'>Login</span></Link></p>
+                <p className="text-xs">ALready have an account? <Link to="/"><span className='text-[#0F344F]/60 active:text-[#0F344F]/40'>Login</span></Link></p>
+            </div>
+            <div className='w-1/2 bg-[url("images/image2.jpg")] bg-center bg-top rounded-l-xl bg-no-repeat hidden sm:block'></div>
+            </div>
+            </div>
             </div>
         </div>
     )
