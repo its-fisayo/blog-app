@@ -30,9 +30,9 @@ function Login() {
                 <h1 className='font-script font-bold text-3xl'>Login</h1><br />
                 <form onSubmit= {handleSubmit}className='flex flex-col items-start w-6/7 md:w-3/5 mx-auto'>
                     <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" value={eEMail} onChange={(e) => {setEEmail(e.target.value)}} className="bg-[#0F344F]/20 w-1/1 rounded-sm"></input> <br />
+                    <input type="email" name="email" id="email" value={eEMail} onChange={(e) => {setEEmail(e.target.value)}} className="w-1/1 rounded-sm border"></input> <br />
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="password" value={ePassword} onChange={(e) => {setEPassword(e.target.value)}} className="bg-[#0F344F]/20 w-10/10 rounded-sm"/> <br />
+                    <input type="password" name="password" id="password" value={ePassword} onChange={(e) => {setEPassword(e.target.value)}} className="w-10/10 rounded-sm border"/> <br />
                     <button type="submit" className="bg-[#0F344F] text-white hover:bg-[#0F344F]/40 hover:text-black border-b border-r p-2 w-20 cursor-pointer self-center rounded-lg">Login</button>     
                 </form>
                 <p className='text-xs'>Don't have an account yet? <Link to="/signup"><span className='text-[#0F344F]/60 active:text-[#0F344F]/40'>Sign Up</span></Link></p>
